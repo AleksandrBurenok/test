@@ -23,13 +23,14 @@ const rename = require("gulp-rename");
 
 const styleFiles = [
   './src/css/normalize.scss',
-  './src/css/fonts.scss',
+  './src/css/jquery-ui.min.scss',
   './src/css/main.scss',
   './src/css/media.scss',
 ]
 
 const scriptFiles = [
   './src/js/jquery-3.4.1.min.js',
+  './src/js/jquery-ui.min.js',
   './src/js/main.js',
 ]
 
