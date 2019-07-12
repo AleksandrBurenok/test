@@ -48,3 +48,19 @@ window.onclick = function(e) {
         modal.style.display = "none";
     }
 }
+
+// Show more
+$('.hide').hide();
+$('.showmoreButton').show();
+
+$('.showmoreButton').on('click', function() {
+  $('.hide').toggle();
+  $(this).text() === '+ show more' ? $(this).text('- show less') : $(this).text('+ show more');
+});
+
+// Фильтр слева
+var filters = document.querySelector('.filters');
+
+function addActive() {
+  filters.classList.toggle("filters__active");
+}

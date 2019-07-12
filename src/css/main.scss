@@ -28,6 +28,24 @@ a {
   margin: auto;
 }
 
+.logo {
+  font-family: 'Roboto Black', sans-serif;
+  font-size: 24px;
+  color: #4d4d4d;
+  padding-top: 5px;
+}
+
+.btn-filter {
+  background-color: #fff;
+  padding: 10px 20px;
+  color: #666666;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  border-radius: 6px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+  display: none;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -134,13 +152,6 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 30px 0 40px;
-
-    .logo {
-      font-family: 'Roboto Black', sans-serif;
-      font-size: 24px;
-      color: #4d4d4d;
-      padding-top: 5px;
-    }
 
     .search-form {
       &-group {
@@ -304,11 +315,28 @@ a {
 
   .social {
     display: flex;
+    &__share {
+      img {
+        margin: 0 20px;
+      }
+    }
+  }
+  .breadcrumbs {
+    .breadcrumb {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
 .title__text {
   text-align: center;
+  font-family: 'Roboto Regular', sans-serif;
+  font-weight: normal;
+  color: #666666;
+  font-size: 30px;
 }
 
 .line__blue {
@@ -396,11 +424,13 @@ a {
         margin: 0 13px;
       }
     }
+    .checkbox-wrapper__block {
+      padding: 10px 45px 20px 20px;
+    }
     .checkbox-wrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 45px 30px 20px;
     }
     .checkmark {
       position: absolute;
@@ -423,13 +453,13 @@ a {
       display: block;
       position: relative;
       padding-left: 40px;
-      margin-bottom: 20px;
       cursor: pointer;
       font-size: 12px;
       color: #666666;
       font-family: 'Roboto Medium', sans-serif;
       line-height: 1.75;
       user-select: none;
+      margin-bottom: 20px;
 
       input {
         position: absolute;
@@ -464,8 +494,16 @@ a {
         }
       }
     }
+    .showmoreButton {
+      display: none;
+      cursor: pointer;
+      font-size: 10px;
+      font-family: 'Roboto Black', sans-serif;
+      color: #b3b3b3;
+      text-transform: uppercase;
+    }
   }
-
+  
   .products {
     .sort {
       display: flex;
@@ -528,16 +566,93 @@ a {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          &__sale {
+            background-color: #f7f7f7;
+            border-radius: 4px;
+            padding: 6px;
+            text-transform: uppercase;
+            font-size: 10px;
+          }
 
           &__wrap {
             display: flex;
+            &__list {
+              margin-right: 15px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
           }
         }
 
         &-telephone {
           margin: 35px 0;
         }
+        &-stars {
+          margin-bottom: 20px;
+          img {
+            vertical-align: text-top;
+            margin-right: 20px;
+          }
+        }
+        &-price {
+          img {
+            vertical-align: text-top;
+            margin-left: 15px;
+          }
+        }
       }
     }
+    &-pages {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+      padding: 20px 45px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      font-size: 10px;
+      font-family: 'Roboto Black', sans-serif;
+      color: #b3b3b3;
+      img {
+        vertical-align: text-top;
+        margin-right: 25px;
+      }
+      .next {
+        img {
+          margin-left: 25px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+.footer {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+  padding: 40px 0;
+  &-wrapper {
+    border-bottom: 2px solid#f5f5f5;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__top {
+    padding-bottom: 30px;
+  }
+  &__bottom {
+    padding-top: 30px;
+  }
+  &__aside {
+    div, span, a {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }       
   }
 }

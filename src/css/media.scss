@@ -1,3 +1,27 @@
-@media screen and (max-width: 1024px) {
-
+@media (max-width: 480px) {
+  .container {
+    width: 420px;
+    padding: 0 15px;
+  }
+  .navbar {
+    .container {
+      width: 420px;
+    }
+  }
+  .filters {
+    opacity: 0;
+    position: fixed; 
+    top: 0;
+    left: -255px;
+    height: 100%;
+    z-index: 1;
+    transition: left 1s;
+    &__active {
+      opacity: 1;
+      left: 80px;
+    }
+  }
+  .btn-filter {
+    display: block;
+  }
 }
