@@ -11,6 +11,28 @@
 </head>
 
 <body>
+  <div id="signModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">×</span>
+        <h2>Sign in</h2>
+      </div>
+      <div class="modal-body">
+        <form action="#" class="modal-form">
+          <div class="modal-form__group">
+            <input class="modal-form__input" type="email" placeholder="Email">
+          </div>
+          <div class="modal-form__group">
+            <input class="modal-form__input" type="password" placeholder="Password">
+          </div>
+          <div class="modal-form__group">
+            <button class="modal-form__button" type="button">Sign in</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
   <header class="header">
     <div class="topbar">
       <div class="container">
@@ -39,7 +61,7 @@
               <img src="build/img/wishlist-icon.png" alt="wishlist-icon">
               <span class="block-user__text">Wish List</span>
             </a>
-            <a href="#" class="block-user">
+            <a href="#" id="btn-modal" class="block-user">
               <img src="build/img/user-icon.png" alt="user-icon">
               <span class="block-user__text">Sign in</span>
             </a>
@@ -150,8 +172,53 @@
               </div>
             </div>
             <h3>Brand</h3>
-            <div class="selector">
-              <p>Coming soon...</p>
+            <div class="checkbox-wrap">
+              <input type="checkbox" class="show-more" id="show">
+              <div class="chackbox-wrap__blocks">
+                <label class="checkbox-container">Apple
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Asus
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Lenovo
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Xiaomi
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Huawei
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+              </div>
+              <div class="chackbox-wrap__blocks">
+                <label class="checkbox-container">Sony
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">LG
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Meizu
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">HTC
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Samsung
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+              </div>
+              <label for="show" class="show-more-trigger"></label>
             </div>
             <h3>Color</h3>
             <div class="selector">
@@ -238,55 +305,55 @@
               </div>
             </div>
             <div class="card">
-                <div class="card__top">
-                  <div class="card__top__sale">sale 10%</div>
-                  <div class="card__top__wrap">
-                    <div class="card__top-wrap__list">
-                      <img src="build/img/list-icon.png" alt="list-icon">
-                    </div>
-                    <div class="card__top-wrap__list">
-                      <img src="build/img/wishlist-icon-card.png" alt="wishlist-icon-card">
-                    </div>
+              <div class="card__top">
+                <div class="card__top__sale">sale 10%</div>
+                <div class="card__top__wrap">
+                  <div class="card__top-wrap__list">
+                    <img src="build/img/list-icon.png" alt="list-icon">
                   </div>
-                </div>
-                <div class="card-telephone">
-                  <img src="build/img/iphone.png" alt="iphone">
-                  <p>Asus ZenFone Go ZB452KG (black and white)</p>
-                </div>
-                <div class="card-stars">
-                  <img src="build/img/stars.png" alt="stars">
-                  <span>12</span>
-                </div>
-                <div class="card-price">
-                  <span>$ 384.4</span>
-                  <img src="build/img/cart-icon-card.png" alt="cart-icon-card">
+                  <div class="card__top-wrap__list">
+                    <img src="build/img/wishlist-icon-card.png" alt="wishlist-icon-card">
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                  <div class="card__top">
-                    <div class="card__top__sale">sale 10%</div>
-                    <div class="card__top__wrap">
-                      <div class="card__top-wrap__list">
-                        <img src="build/img/list-icon.png" alt="list-icon">
-                      </div>
-                      <div class="card__top-wrap__list">
-                        <img src="build/img/wishlist-icon-card.png" alt="wishlist-icon-card">
-                      </div>
-                    </div>
+              <div class="card-telephone">
+                <img src="build/img/iphone.png" alt="iphone">
+                <p>Asus ZenFone Go ZB452KG (black and white)</p>
+              </div>
+              <div class="card-stars">
+                <img src="build/img/stars.png" alt="stars">
+                <span>12</span>
+              </div>
+              <div class="card-price">
+                <span>$ 384.4</span>
+                <img src="build/img/cart-icon-card.png" alt="cart-icon-card">
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <div class="card__top__sale">sale 10%</div>
+                <div class="card__top__wrap">
+                  <div class="card__top-wrap__list">
+                    <img src="build/img/list-icon.png" alt="list-icon">
                   </div>
-                  <div class="card-telephone">
-                    <img src="build/img/iphone.png" alt="iphone">
-                    <p>Asus ZenFone Go ZB452KG (black and white)</p>
-                  </div>
-                  <div class="card-stars">
-                    <img src="build/img/stars.png" alt="stars">
-                    <span>12</span>
-                  </div>
-                  <div class="card-price">
-                    <span>$ 384.4</span>
-                    <img src="build/img/cart-icon-card.png" alt="cart-icon-card">
+                  <div class="card__top-wrap__list">
+                    <img src="build/img/wishlist-icon-card.png" alt="wishlist-icon-card">
                   </div>
                 </div>
+              </div>
+              <div class="card-telephone">
+                <img src="build/img/iphone.png" alt="iphone">
+                <p>Asus ZenFone Go ZB452KG (black and white)</p>
+              </div>
+              <div class="card-stars">
+                <img src="build/img/stars.png" alt="stars">
+                <span>12</span>
+              </div>
+              <div class="card-price">
+                <span>$ 384.4</span>
+                <img src="build/img/cart-icon-card.png" alt="cart-icon-card">
+              </div>
+            </div>
           </div>
         </div>
       </div>
