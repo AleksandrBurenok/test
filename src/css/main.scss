@@ -365,7 +365,23 @@ a {
       outline: 0;
       background-color: #ffffff;
       border: 0;
-      padding: 20px 6px;
+      padding: 18px 15px 18px 21px;
+      margin: 0;
+      border-bottom: 2px solid #fafafa;
+      &-active {
+        border-bottom: 0;
+        .ui-icon {
+          transform: rotate(180deg);
+        }
+      }
+      &-icon {
+        background-image: url('/build/img/arrow-icon.png');
+        width: 10px;
+        height: 6px;
+        float: right;
+        background-position: 0;
+        margin-top: 8px;
+      }      
     }
 
     .ui-state-active {
@@ -375,8 +391,9 @@ a {
     }
 
     .ui-accordion-content {
-      padding: 40px 20px 30px 20px;
+      padding: 18px 20px 30px 20px;
       border: 0;
+      border-bottom: 2px solid #fafafa;
     }
 
     #slider-range {
