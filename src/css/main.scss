@@ -315,15 +315,19 @@ a {
 
   .social {
     display: flex;
+
     &__share {
       img {
         margin: 0 20px;
       }
     }
   }
+
   .breadcrumbs {
     .breadcrumb {
-      margin-right: 15px;
+      margin-right: 18px;
+      font-size: 12px;
+
       &:last-child {
         margin-right: 0;
       }
@@ -368,12 +372,15 @@ a {
       padding: 18px 15px 18px 21px;
       margin: 0;
       border-bottom: 2px solid #fafafa;
+
       &-active {
         border-bottom: 0;
+
         .ui-icon {
           transform: rotate(180deg);
         }
       }
+
       &-icon {
         background-image: url('/build/img/arrow-icon.png');
         width: 10px;
@@ -381,7 +388,7 @@ a {
         float: right;
         background-position: 0;
         margin-top: 8px;
-      }      
+      }
     }
 
     .ui-state-active {
@@ -414,6 +421,7 @@ a {
         top: -6px;
         width: 16px;
         height: 16px;
+        cursor: pointer;
       }
     }
 
@@ -441,14 +449,17 @@ a {
         margin: 0 13px;
       }
     }
+
     .checkbox-wrapper__block {
       padding: 10px 45px 20px 20px;
     }
+
     .checkbox-wrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+
     .checkmark {
       position: absolute;
       top: 0;
@@ -511,6 +522,7 @@ a {
         }
       }
     }
+
     .showmoreButton {
       display: none;
       cursor: pointer;
@@ -520,7 +532,7 @@ a {
       text-transform: uppercase;
     }
   }
-  
+
   .products {
     .sort {
       display: flex;
@@ -554,6 +566,7 @@ a {
       &-tab {
         border-left: 2px solid #f5f5f5;
         padding: 22px 20px;
+        cursor: pointer;
       }
 
       .active {
@@ -583,6 +596,7 @@ a {
           display: flex;
           justify-content: space-between;
           align-items: center;
+
           &__sale {
             background-color: #f7f7f7;
             border-radius: 4px;
@@ -593,8 +607,10 @@ a {
 
           &__wrap {
             display: flex;
+
             &__list {
               margin-right: 15px;
+
               &:last-child {
                 margin-right: 0;
               }
@@ -604,14 +620,18 @@ a {
 
         &-telephone {
           margin: 35px 0;
+          display: block;
         }
+
         &-stars {
           margin-bottom: 20px;
+
           img {
             vertical-align: text-top;
             margin-right: 20px;
           }
         }
+
         &-price {
           img {
             vertical-align: text-top;
@@ -620,6 +640,7 @@ a {
         }
       }
     }
+
     &-pages {
       display: flex;
       justify-content: space-between;
@@ -633,10 +654,12 @@ a {
       font-size: 10px;
       font-family: 'Roboto Black', sans-serif;
       color: #b3b3b3;
+
       img {
         vertical-align: text-top;
         margin-right: 25px;
       }
+
       .next {
         img {
           margin-left: 25px;
@@ -646,30 +669,40 @@ a {
     }
   }
 }
+
 .footer {
   background-color: #fff;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
   padding: 40px 0;
+
   &-wrapper {
     border-bottom: 2px solid#f5f5f5;
   }
+
   &__flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &__top {
     padding-bottom: 30px;
   }
+
   &__bottom {
     padding-top: 30px;
   }
+
   &__aside {
-    div, span, a {
+
+    div,
+    span,
+    a {
       margin-right: 15px;
+
       &:last-child {
         margin-right: 0;
       }
-    }       
+    }
   }
 }
